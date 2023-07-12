@@ -34,7 +34,7 @@ public abstract class Animal {
 
     public static Animal createAnimal(String type, String name, int age, String gender) {
         switch (type) {
-            case "Cat":
+            case "Polymorphism.Animals.PolymorphismEx.Zoo.Cat":
                 return new Cat(name, age, gender);
             case "Kitten":
                 return new Kitten(name, age);
@@ -42,7 +42,7 @@ public abstract class Animal {
                 return new Tomcat(name, age);
             case "Frog":
                 return new Frog(name, age, gender);
-            case "Dog":
+            case "Polymorphism.Animals.Dog":
                 return new Dog(name, age, gender);
             default:
                 throw new IllegalArgumentException("Invalid input!");
